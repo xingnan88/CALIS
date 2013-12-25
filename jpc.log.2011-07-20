@@ -1,0 +1,271 @@
+[INFO ][2011-07-20 19:46:34][org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:454)]:Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@29ab3e: startup date [Wed Jul 20 19:46:34 CST 2011]; root of context hierarchy
+ [INFO ][2011-07-20 19:46:35][org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)]:Loading XML bean definitions from class path resource [applicationContext-hibernate.xml]
+ [INFO ][2011-07-20 19:46:35][org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.registerDefaultFilters(ClassPathScanningCandidateComponentProvider.java:186)]:JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+ [INFO ][2011-07-20 19:46:36][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:138)]:JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO ][2011-07-20 19:46:36][org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:537)]:Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@9a8a68: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,patentService,pageService,patentDao,pageDao,dataSource,sessionFactory,hibernateTemplate,transactionManager,txAdvice,org.springframework.aop.config.internalAutoProxyCreator,allServiceMethod,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0]; root of factory hierarchy
+ [INFO ][2011-07-20 19:46:37][org.hibernate.cfg.annotations.Version.<clinit>(Version.java:15)]:Hibernate Annotations 3.4.0.GA
+ [INFO ][2011-07-20 19:46:37][org.hibernate.cfg.Environment.<clinit>(Environment.java:543)]:Hibernate 3.3.1.GA
+ [INFO ][2011-07-20 19:46:37][org.hibernate.cfg.Environment.<clinit>(Environment.java:576)]:hibernate.properties not found
+ [INFO ][2011-07-20 19:46:37][org.hibernate.cfg.Environment.buildBytecodeProvider(Environment.java:709)]:Bytecode provider name : javassist
+ [INFO ][2011-07-20 19:46:37][org.hibernate.cfg.Environment.<clinit>(Environment.java:627)]:using JDK 1.4 java.sql.Timestamp handling
+ [INFO ][2011-07-20 19:46:37][org.hibernate.annotations.common.Version.<clinit>(Version.java:14)]:Hibernate Commons Annotations 3.1.0.GA
+ [INFO ][2011-07-20 19:46:37][org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:419)]:Binding entity from annotated class: jxust.patent.model.Patent
+ [INFO ][2011-07-20 19:46:37][org.hibernate.cfg.annotations.EntityBinder.bindTable(EntityBinder.java:422)]:Bind entity jxust.patent.model.Patent on table Patent
+ [INFO ][2011-07-20 19:46:37][org.hibernate.cfg.AnnotationConfiguration.secondPassCompile(AnnotationConfiguration.java:369)]:Hibernate Validator not found: ignoring
+ [INFO ][2011-07-20 19:46:37][org.springframework.orm.hibernate3.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:772)]:Building new Hibernate SessionFactory
+ [INFO ][2011-07-20 19:46:37][org.hibernate.cfg.search.HibernateSearchEventListenerRegister.enableHibernateSearch(HibernateSearchEventListenerRegister.java:53)]:Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+ [INFO ][2011-07-20 19:46:37][org.hibernate.connection.ConnectionProviderFactory.newConnectionProvider(ConnectionProviderFactory.java:95)]:Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+ [INFO ][2011-07-20 19:46:38][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:116)]:RDBMS: Microsoft SQL Server, version: 9.00.4035
+ [INFO ][2011-07-20 19:46:38][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:117)]:JDBC driver: Microsoft SQL Server JDBC Driver 3.0, version: 3.0.1301.101
+ [INFO ][2011-07-20 19:46:38][org.hibernate.dialect.Dialect.<init>(Dialect.java:175)]:Using dialect: org.hibernate.dialect.MySQLDialect
+ [INFO ][2011-07-20 19:46:38][org.hibernate.transaction.TransactionFactoryFactory.buildTransactionFactory(TransactionFactoryFactory.java:62)]:Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+ [INFO ][2011-07-20 19:46:38][org.hibernate.transaction.TransactionManagerLookupFactory.getTransactionManagerLookup(TransactionManagerLookupFactory.java:80)]:No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+ [INFO ][2011-07-20 19:46:38][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:170)]:Automatic flush during beforeCompletion(): disabled
+ [INFO ][2011-07-20 19:46:38][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:174)]:Automatic session close at end of transaction: disabled
+ [INFO ][2011-07-20 19:46:38][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:181)]:JDBC batch size: 15
+ [INFO ][2011-07-20 19:46:38][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:184)]:JDBC batch updates for versioned data: disabled
+ [INFO ][2011-07-20 19:46:38][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:189)]:Scrollable result sets: enabled
+ [INFO ][2011-07-20 19:46:38][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:197)]:JDBC3 getGeneratedKeys(): enabled
+ [INFO ][2011-07-20 19:46:38][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:205)]:Connection release mode: auto
+ [INFO ][2011-07-20 19:46:38][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:229)]:Maximum outer join fetch depth: 2
+ [INFO ][2011-07-20 19:46:38][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:232)]:Default batch fetch size: 1
+ [INFO ][2011-07-20 19:46:38][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:236)]:Generate SQL with comments: disabled
+ [INFO ][2011-07-20 19:46:38][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:240)]:Order SQL updates by primary key: disabled
+ [INFO ][2011-07-20 19:46:38][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:244)]:Order SQL inserts for batching: disabled
+ [INFO ][2011-07-20 19:46:38][org.hibernate.cfg.SettingsFactory.createQueryTranslatorFactory(SettingsFactory.java:420)]:Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+ [INFO ][2011-07-20 19:46:38][org.hibernate.hql.ast.ASTQueryTranslatorFactory.<init>(ASTQueryTranslatorFactory.java:47)]:Using ASTQueryTranslatorFactory
+ [INFO ][2011-07-20 19:46:38][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:252)]:Query language substitutions: {}
+ [INFO ][2011-07-20 19:46:38][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:257)]:JPA-QL strict compliance: disabled
+ [INFO ][2011-07-20 19:46:38][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:262)]:Second-level cache: enabled
+ [INFO ][2011-07-20 19:46:38][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:266)]:Query cache: disabled
+ [INFO ][2011-07-20 19:46:38][org.hibernate.cfg.SettingsFactory.createRegionFactory(SettingsFactory.java:405)]:Cache region factory : org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge
+ [INFO ][2011-07-20 19:46:38][org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge.<init>(RegionFactoryCacheProviderBridge.java:61)]:Cache provider: org.hibernate.cache.EhCacheProvider
+ [INFO ][2011-07-20 19:46:38][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:276)]:Optimize cache for minimal puts: disabled
+ [INFO ][2011-07-20 19:46:38][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:285)]:Structured second-level cache entries: disabled
+ [INFO ][2011-07-20 19:46:38][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:305)]:Echoing all SQL to stdout
+ [INFO ][2011-07-20 19:46:38][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:314)]:Statistics: disabled
+ [INFO ][2011-07-20 19:46:38][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:318)]:Deleted entity synthetic identifier rollback: disabled
+ [INFO ][2011-07-20 19:46:38][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:333)]:Default entity-mode: pojo
+ [INFO ][2011-07-20 19:46:38][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:337)]:Named query checking : enabled
+ [INFO ][2011-07-20 19:46:38][org.hibernate.impl.SessionFactoryImpl.<init>(SessionFactoryImpl.java:187)]:building session factory
+ [WARN ][2011-07-20 19:46:38][net.sf.ehcache.config.ConfigurationFactory.parseConfiguration(ConfigurationFactory.java:127)]:No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/D:/Workspaces/MyEclipse%208.5/patent_006/WebRoot/WEB-INF/lib/ehcache-1.2.3.jar!/ehcache-failsafe.xml
+ [INFO ][2011-07-20 19:46:39][org.hibernate.impl.SessionFactoryObjectFactory.addInstance(SessionFactoryObjectFactory.java:105)]:Not binding factory to JNDI, no JNDI name configured
+ [INFO ][2011-07-20 19:46:39][org.springframework.orm.hibernate3.HibernateTransactionManager.afterPropertiesSet(HibernateTransactionManager.java:415)]:Using DataSource [org.apache.commons.dbcp.BasicDataSource@180f545] of Hibernate SessionFactory for HibernateTransactionManager
+ [WARN ][2011-07-20 19:46:39][org.hibernate.util.JDBCExceptionReporter.logExceptions(JDBCExceptionReporter.java:100)]:SQL Error: 102, SQLState: S0001
+ [ERROR][2011-07-20 19:46:39][org.hibernate.util.JDBCExceptionReporter.logExceptions(JDBCExceptionReporter.java:101)]:'limit' 附近有语法错误。
+ [INFO ][2011-07-20 19:48:07][org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:454)]:Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1a99561: startup date [Wed Jul 20 19:48:07 CST 2011]; root of context hierarchy
+ [INFO ][2011-07-20 19:48:07][org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)]:Loading XML bean definitions from class path resource [applicationContext-hibernate.xml]
+ [INFO ][2011-07-20 19:48:08][org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.registerDefaultFilters(ClassPathScanningCandidateComponentProvider.java:186)]:JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+ [INFO ][2011-07-20 19:48:08][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:138)]:JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO ][2011-07-20 19:48:08][org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:537)]:Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@9a8a68: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,patentService,pageService,patentDao,pageDao,dataSource,sessionFactory,hibernateTemplate,transactionManager,txAdvice,org.springframework.aop.config.internalAutoProxyCreator,allServiceMethod,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0]; root of factory hierarchy
+ [INFO ][2011-07-20 19:48:08][org.hibernate.cfg.annotations.Version.<clinit>(Version.java:15)]:Hibernate Annotations 3.4.0.GA
+ [INFO ][2011-07-20 19:48:08][org.hibernate.cfg.Environment.<clinit>(Environment.java:543)]:Hibernate 3.3.1.GA
+ [INFO ][2011-07-20 19:48:08][org.hibernate.cfg.Environment.<clinit>(Environment.java:576)]:hibernate.properties not found
+ [INFO ][2011-07-20 19:48:08][org.hibernate.cfg.Environment.buildBytecodeProvider(Environment.java:709)]:Bytecode provider name : javassist
+ [INFO ][2011-07-20 19:48:08][org.hibernate.cfg.Environment.<clinit>(Environment.java:627)]:using JDK 1.4 java.sql.Timestamp handling
+ [INFO ][2011-07-20 19:48:08][org.hibernate.annotations.common.Version.<clinit>(Version.java:14)]:Hibernate Commons Annotations 3.1.0.GA
+ [INFO ][2011-07-20 19:48:08][org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:419)]:Binding entity from annotated class: jxust.patent.model.Patent
+ [INFO ][2011-07-20 19:48:08][org.hibernate.cfg.annotations.EntityBinder.bindTable(EntityBinder.java:422)]:Bind entity jxust.patent.model.Patent on table Patent
+ [INFO ][2011-07-20 19:48:09][org.hibernate.cfg.AnnotationConfiguration.secondPassCompile(AnnotationConfiguration.java:369)]:Hibernate Validator not found: ignoring
+ [INFO ][2011-07-20 19:48:09][org.springframework.orm.hibernate3.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:772)]:Building new Hibernate SessionFactory
+ [INFO ][2011-07-20 19:48:09][org.hibernate.cfg.search.HibernateSearchEventListenerRegister.enableHibernateSearch(HibernateSearchEventListenerRegister.java:53)]:Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+ [INFO ][2011-07-20 19:48:09][org.hibernate.connection.ConnectionProviderFactory.newConnectionProvider(ConnectionProviderFactory.java:95)]:Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+ [INFO ][2011-07-20 19:48:09][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:116)]:RDBMS: Microsoft SQL Server, version: 9.00.4035
+ [INFO ][2011-07-20 19:48:09][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:117)]:JDBC driver: Microsoft SQL Server JDBC Driver 3.0, version: 3.0.1301.101
+ [INFO ][2011-07-20 19:48:09][org.hibernate.dialect.Dialect.<init>(Dialect.java:175)]:Using dialect: org.hibernate.dialect.MySQLDialect
+ [INFO ][2011-07-20 19:48:09][org.hibernate.transaction.TransactionFactoryFactory.buildTransactionFactory(TransactionFactoryFactory.java:62)]:Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+ [INFO ][2011-07-20 19:48:09][org.hibernate.transaction.TransactionManagerLookupFactory.getTransactionManagerLookup(TransactionManagerLookupFactory.java:80)]:No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+ [INFO ][2011-07-20 19:48:09][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:170)]:Automatic flush during beforeCompletion(): disabled
+ [INFO ][2011-07-20 19:48:09][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:174)]:Automatic session close at end of transaction: disabled
+ [INFO ][2011-07-20 19:48:09][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:181)]:JDBC batch size: 15
+ [INFO ][2011-07-20 19:48:09][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:184)]:JDBC batch updates for versioned data: disabled
+ [INFO ][2011-07-20 19:48:09][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:189)]:Scrollable result sets: enabled
+ [INFO ][2011-07-20 19:48:09][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:197)]:JDBC3 getGeneratedKeys(): enabled
+ [INFO ][2011-07-20 19:48:09][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:205)]:Connection release mode: auto
+ [INFO ][2011-07-20 19:48:09][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:229)]:Maximum outer join fetch depth: 2
+ [INFO ][2011-07-20 19:48:09][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:232)]:Default batch fetch size: 1
+ [INFO ][2011-07-20 19:48:09][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:236)]:Generate SQL with comments: disabled
+ [INFO ][2011-07-20 19:48:09][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:240)]:Order SQL updates by primary key: disabled
+ [INFO ][2011-07-20 19:48:09][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:244)]:Order SQL inserts for batching: disabled
+ [INFO ][2011-07-20 19:48:09][org.hibernate.cfg.SettingsFactory.createQueryTranslatorFactory(SettingsFactory.java:420)]:Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+ [INFO ][2011-07-20 19:48:09][org.hibernate.hql.ast.ASTQueryTranslatorFactory.<init>(ASTQueryTranslatorFactory.java:47)]:Using ASTQueryTranslatorFactory
+ [INFO ][2011-07-20 19:48:09][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:252)]:Query language substitutions: {}
+ [INFO ][2011-07-20 19:48:09][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:257)]:JPA-QL strict compliance: disabled
+ [INFO ][2011-07-20 19:48:09][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:262)]:Second-level cache: enabled
+ [INFO ][2011-07-20 19:48:09][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:266)]:Query cache: disabled
+ [INFO ][2011-07-20 19:48:09][org.hibernate.cfg.SettingsFactory.createRegionFactory(SettingsFactory.java:405)]:Cache region factory : org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge
+ [INFO ][2011-07-20 19:48:09][org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge.<init>(RegionFactoryCacheProviderBridge.java:61)]:Cache provider: org.hibernate.cache.EhCacheProvider
+ [INFO ][2011-07-20 19:48:09][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:276)]:Optimize cache for minimal puts: disabled
+ [INFO ][2011-07-20 19:48:09][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:285)]:Structured second-level cache entries: disabled
+ [INFO ][2011-07-20 19:48:09][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:305)]:Echoing all SQL to stdout
+ [INFO ][2011-07-20 19:48:09][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:314)]:Statistics: disabled
+ [INFO ][2011-07-20 19:48:09][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:318)]:Deleted entity synthetic identifier rollback: disabled
+ [INFO ][2011-07-20 19:48:09][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:333)]:Default entity-mode: pojo
+ [INFO ][2011-07-20 19:48:09][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:337)]:Named query checking : enabled
+ [INFO ][2011-07-20 19:48:09][org.hibernate.impl.SessionFactoryImpl.<init>(SessionFactoryImpl.java:187)]:building session factory
+ [WARN ][2011-07-20 19:48:09][net.sf.ehcache.config.ConfigurationFactory.parseConfiguration(ConfigurationFactory.java:127)]:No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/D:/Workspaces/MyEclipse%208.5/patent_006/WebRoot/WEB-INF/lib/ehcache-1.2.3.jar!/ehcache-failsafe.xml
+ [INFO ][2011-07-20 19:48:09][org.hibernate.impl.SessionFactoryObjectFactory.addInstance(SessionFactoryObjectFactory.java:105)]:Not binding factory to JNDI, no JNDI name configured
+ [INFO ][2011-07-20 19:48:09][org.springframework.orm.hibernate3.HibernateTransactionManager.afterPropertiesSet(HibernateTransactionManager.java:415)]:Using DataSource [org.apache.commons.dbcp.BasicDataSource@8c858a] of Hibernate SessionFactory for HibernateTransactionManager
+ [WARN ][2011-07-20 19:48:10][org.hibernate.util.JDBCExceptionReporter.logExceptions(JDBCExceptionReporter.java:100)]:SQL Error: 102, SQLState: S0001
+ [ERROR][2011-07-20 19:48:10][org.hibernate.util.JDBCExceptionReporter.logExceptions(JDBCExceptionReporter.java:101)]:'limit' 附近有语法错误。
+ [INFO ][2011-07-20 19:48:47][org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:454)]:Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@b76fa: startup date [Wed Jul 20 19:48:47 CST 2011]; root of context hierarchy
+ [INFO ][2011-07-20 19:48:48][org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)]:Loading XML bean definitions from class path resource [applicationContext-hibernate.xml]
+ [INFO ][2011-07-20 19:48:48][org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.registerDefaultFilters(ClassPathScanningCandidateComponentProvider.java:186)]:JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+ [INFO ][2011-07-20 19:48:48][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:138)]:JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO ][2011-07-20 19:48:48][org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:537)]:Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@183e7de: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,patentService,pageService,patentDao,pageDao,dataSource,sessionFactory,hibernateTemplate,transactionManager,txAdvice,org.springframework.aop.config.internalAutoProxyCreator,allServiceMethod,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0]; root of factory hierarchy
+ [INFO ][2011-07-20 19:48:49][org.hibernate.cfg.annotations.Version.<clinit>(Version.java:15)]:Hibernate Annotations 3.4.0.GA
+ [INFO ][2011-07-20 19:48:49][org.hibernate.cfg.Environment.<clinit>(Environment.java:543)]:Hibernate 3.3.1.GA
+ [INFO ][2011-07-20 19:48:49][org.hibernate.cfg.Environment.<clinit>(Environment.java:576)]:hibernate.properties not found
+ [INFO ][2011-07-20 19:48:49][org.hibernate.cfg.Environment.buildBytecodeProvider(Environment.java:709)]:Bytecode provider name : javassist
+ [INFO ][2011-07-20 19:48:49][org.hibernate.cfg.Environment.<clinit>(Environment.java:627)]:using JDK 1.4 java.sql.Timestamp handling
+ [INFO ][2011-07-20 19:48:49][org.hibernate.annotations.common.Version.<clinit>(Version.java:14)]:Hibernate Commons Annotations 3.1.0.GA
+ [INFO ][2011-07-20 19:48:49][org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:419)]:Binding entity from annotated class: jxust.patent.model.Patent
+ [INFO ][2011-07-20 19:48:49][org.hibernate.cfg.annotations.EntityBinder.bindTable(EntityBinder.java:422)]:Bind entity jxust.patent.model.Patent on table Patent
+ [INFO ][2011-07-20 19:48:49][org.hibernate.cfg.AnnotationConfiguration.secondPassCompile(AnnotationConfiguration.java:369)]:Hibernate Validator not found: ignoring
+ [INFO ][2011-07-20 19:48:49][org.springframework.orm.hibernate3.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:772)]:Building new Hibernate SessionFactory
+ [INFO ][2011-07-20 19:48:49][org.hibernate.cfg.search.HibernateSearchEventListenerRegister.enableHibernateSearch(HibernateSearchEventListenerRegister.java:53)]:Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+ [INFO ][2011-07-20 19:48:49][org.hibernate.connection.ConnectionProviderFactory.newConnectionProvider(ConnectionProviderFactory.java:95)]:Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+ [INFO ][2011-07-20 19:48:49][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:116)]:RDBMS: Microsoft SQL Server, version: 9.00.4035
+ [INFO ][2011-07-20 19:48:49][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:117)]:JDBC driver: Microsoft SQL Server JDBC Driver 3.0, version: 3.0.1301.101
+ [INFO ][2011-07-20 19:48:49][org.hibernate.dialect.Dialect.<init>(Dialect.java:175)]:Using dialect: org.hibernate.dialect.MySQLDialect
+ [INFO ][2011-07-20 19:48:49][org.hibernate.transaction.TransactionFactoryFactory.buildTransactionFactory(TransactionFactoryFactory.java:62)]:Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+ [INFO ][2011-07-20 19:48:49][org.hibernate.transaction.TransactionManagerLookupFactory.getTransactionManagerLookup(TransactionManagerLookupFactory.java:80)]:No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+ [INFO ][2011-07-20 19:48:49][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:170)]:Automatic flush during beforeCompletion(): disabled
+ [INFO ][2011-07-20 19:48:49][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:174)]:Automatic session close at end of transaction: disabled
+ [INFO ][2011-07-20 19:48:49][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:181)]:JDBC batch size: 15
+ [INFO ][2011-07-20 19:48:49][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:184)]:JDBC batch updates for versioned data: disabled
+ [INFO ][2011-07-20 19:48:49][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:189)]:Scrollable result sets: enabled
+ [INFO ][2011-07-20 19:48:49][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:197)]:JDBC3 getGeneratedKeys(): enabled
+ [INFO ][2011-07-20 19:48:49][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:205)]:Connection release mode: auto
+ [INFO ][2011-07-20 19:48:49][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:229)]:Maximum outer join fetch depth: 2
+ [INFO ][2011-07-20 19:48:49][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:232)]:Default batch fetch size: 1
+ [INFO ][2011-07-20 19:48:49][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:236)]:Generate SQL with comments: disabled
+ [INFO ][2011-07-20 19:48:49][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:240)]:Order SQL updates by primary key: disabled
+ [INFO ][2011-07-20 19:48:49][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:244)]:Order SQL inserts for batching: disabled
+ [INFO ][2011-07-20 19:48:49][org.hibernate.cfg.SettingsFactory.createQueryTranslatorFactory(SettingsFactory.java:420)]:Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+ [INFO ][2011-07-20 19:48:49][org.hibernate.hql.ast.ASTQueryTranslatorFactory.<init>(ASTQueryTranslatorFactory.java:47)]:Using ASTQueryTranslatorFactory
+ [INFO ][2011-07-20 19:48:49][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:252)]:Query language substitutions: {}
+ [INFO ][2011-07-20 19:48:49][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:257)]:JPA-QL strict compliance: disabled
+ [INFO ][2011-07-20 19:48:49][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:262)]:Second-level cache: enabled
+ [INFO ][2011-07-20 19:48:49][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:266)]:Query cache: disabled
+ [INFO ][2011-07-20 19:48:49][org.hibernate.cfg.SettingsFactory.createRegionFactory(SettingsFactory.java:405)]:Cache region factory : org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge
+ [INFO ][2011-07-20 19:48:49][org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge.<init>(RegionFactoryCacheProviderBridge.java:61)]:Cache provider: org.hibernate.cache.EhCacheProvider
+ [INFO ][2011-07-20 19:48:49][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:276)]:Optimize cache for minimal puts: disabled
+ [INFO ][2011-07-20 19:48:49][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:285)]:Structured second-level cache entries: disabled
+ [INFO ][2011-07-20 19:48:49][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:305)]:Echoing all SQL to stdout
+ [INFO ][2011-07-20 19:48:49][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:314)]:Statistics: disabled
+ [INFO ][2011-07-20 19:48:49][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:318)]:Deleted entity synthetic identifier rollback: disabled
+ [INFO ][2011-07-20 19:48:49][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:333)]:Default entity-mode: pojo
+ [INFO ][2011-07-20 19:48:49][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:337)]:Named query checking : enabled
+ [INFO ][2011-07-20 19:48:49][org.hibernate.impl.SessionFactoryImpl.<init>(SessionFactoryImpl.java:187)]:building session factory
+ [WARN ][2011-07-20 19:48:49][net.sf.ehcache.config.ConfigurationFactory.parseConfiguration(ConfigurationFactory.java:127)]:No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/D:/Workspaces/MyEclipse%208.5/patent_006/WebRoot/WEB-INF/lib/ehcache-1.2.3.jar!/ehcache-failsafe.xml
+ [INFO ][2011-07-20 19:48:50][org.hibernate.impl.SessionFactoryObjectFactory.addInstance(SessionFactoryObjectFactory.java:105)]:Not binding factory to JNDI, no JNDI name configured
+ [INFO ][2011-07-20 19:48:50][org.springframework.orm.hibernate3.HibernateTransactionManager.afterPropertiesSet(HibernateTransactionManager.java:415)]:Using DataSource [org.apache.commons.dbcp.BasicDataSource@1909385] of Hibernate SessionFactory for HibernateTransactionManager
+ [WARN ][2011-07-20 19:48:50][org.hibernate.util.JDBCExceptionReporter.logExceptions(JDBCExceptionReporter.java:100)]:SQL Error: 102, SQLState: S0001
+ [ERROR][2011-07-20 19:48:50][org.hibernate.util.JDBCExceptionReporter.logExceptions(JDBCExceptionReporter.java:101)]:'limit' 附近有语法错误。
+ [INFO ][2011-07-20 19:48:57][org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:454)]:Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@b01d43: startup date [Wed Jul 20 19:48:57 CST 2011]; root of context hierarchy
+ [INFO ][2011-07-20 19:48:57][org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)]:Loading XML bean definitions from class path resource [applicationContext-hibernate.xml]
+ [INFO ][2011-07-20 19:48:57][org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.registerDefaultFilters(ClassPathScanningCandidateComponentProvider.java:186)]:JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+ [INFO ][2011-07-20 19:48:57][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:138)]:JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO ][2011-07-20 19:48:57][org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:537)]:Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@10fe2b9: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,patentService,pageService,patentDao,pageDao,dataSource,sessionFactory,hibernateTemplate,transactionManager,txAdvice,org.springframework.aop.config.internalAutoProxyCreator,allServiceMethod,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0]; root of factory hierarchy
+ [INFO ][2011-07-20 19:48:58][org.hibernate.cfg.annotations.Version.<clinit>(Version.java:15)]:Hibernate Annotations 3.4.0.GA
+ [INFO ][2011-07-20 19:48:58][org.hibernate.cfg.Environment.<clinit>(Environment.java:543)]:Hibernate 3.3.1.GA
+ [INFO ][2011-07-20 19:48:58][org.hibernate.cfg.Environment.<clinit>(Environment.java:576)]:hibernate.properties not found
+ [INFO ][2011-07-20 19:48:58][org.hibernate.cfg.Environment.buildBytecodeProvider(Environment.java:709)]:Bytecode provider name : javassist
+ [INFO ][2011-07-20 19:48:58][org.hibernate.cfg.Environment.<clinit>(Environment.java:627)]:using JDK 1.4 java.sql.Timestamp handling
+ [INFO ][2011-07-20 19:48:58][org.hibernate.annotations.common.Version.<clinit>(Version.java:14)]:Hibernate Commons Annotations 3.1.0.GA
+ [INFO ][2011-07-20 19:48:58][org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:419)]:Binding entity from annotated class: jxust.patent.model.Patent
+ [INFO ][2011-07-20 19:48:58][org.hibernate.cfg.annotations.EntityBinder.bindTable(EntityBinder.java:422)]:Bind entity jxust.patent.model.Patent on table Patent
+ [INFO ][2011-07-20 19:48:58][org.hibernate.cfg.AnnotationConfiguration.secondPassCompile(AnnotationConfiguration.java:369)]:Hibernate Validator not found: ignoring
+ [INFO ][2011-07-20 19:48:58][org.springframework.orm.hibernate3.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:772)]:Building new Hibernate SessionFactory
+ [INFO ][2011-07-20 19:48:58][org.hibernate.cfg.search.HibernateSearchEventListenerRegister.enableHibernateSearch(HibernateSearchEventListenerRegister.java:53)]:Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+ [INFO ][2011-07-20 19:48:58][org.hibernate.connection.ConnectionProviderFactory.newConnectionProvider(ConnectionProviderFactory.java:95)]:Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+ [INFO ][2011-07-20 19:48:58][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:116)]:RDBMS: Microsoft SQL Server, version: 9.00.4035
+ [INFO ][2011-07-20 19:48:58][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:117)]:JDBC driver: Microsoft SQL Server JDBC Driver 3.0, version: 3.0.1301.101
+ [INFO ][2011-07-20 19:48:58][org.hibernate.dialect.Dialect.<init>(Dialect.java:175)]:Using dialect: org.hibernate.dialect.MySQLDialect
+ [INFO ][2011-07-20 19:48:58][org.hibernate.transaction.TransactionFactoryFactory.buildTransactionFactory(TransactionFactoryFactory.java:62)]:Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+ [INFO ][2011-07-20 19:48:58][org.hibernate.transaction.TransactionManagerLookupFactory.getTransactionManagerLookup(TransactionManagerLookupFactory.java:80)]:No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+ [INFO ][2011-07-20 19:48:59][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:170)]:Automatic flush during beforeCompletion(): disabled
+ [INFO ][2011-07-20 19:48:59][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:174)]:Automatic session close at end of transaction: disabled
+ [INFO ][2011-07-20 19:48:59][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:181)]:JDBC batch size: 15
+ [INFO ][2011-07-20 19:48:59][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:184)]:JDBC batch updates for versioned data: disabled
+ [INFO ][2011-07-20 19:48:59][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:189)]:Scrollable result sets: enabled
+ [INFO ][2011-07-20 19:48:59][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:197)]:JDBC3 getGeneratedKeys(): enabled
+ [INFO ][2011-07-20 19:48:59][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:205)]:Connection release mode: auto
+ [INFO ][2011-07-20 19:48:59][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:229)]:Maximum outer join fetch depth: 2
+ [INFO ][2011-07-20 19:48:59][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:232)]:Default batch fetch size: 1
+ [INFO ][2011-07-20 19:48:59][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:236)]:Generate SQL with comments: disabled
+ [INFO ][2011-07-20 19:48:59][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:240)]:Order SQL updates by primary key: disabled
+ [INFO ][2011-07-20 19:48:59][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:244)]:Order SQL inserts for batching: disabled
+ [INFO ][2011-07-20 19:48:59][org.hibernate.cfg.SettingsFactory.createQueryTranslatorFactory(SettingsFactory.java:420)]:Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+ [INFO ][2011-07-20 19:48:59][org.hibernate.hql.ast.ASTQueryTranslatorFactory.<init>(ASTQueryTranslatorFactory.java:47)]:Using ASTQueryTranslatorFactory
+ [INFO ][2011-07-20 19:48:59][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:252)]:Query language substitutions: {}
+ [INFO ][2011-07-20 19:48:59][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:257)]:JPA-QL strict compliance: disabled
+ [INFO ][2011-07-20 19:48:59][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:262)]:Second-level cache: enabled
+ [INFO ][2011-07-20 19:48:59][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:266)]:Query cache: disabled
+ [INFO ][2011-07-20 19:48:59][org.hibernate.cfg.SettingsFactory.createRegionFactory(SettingsFactory.java:405)]:Cache region factory : org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge
+ [INFO ][2011-07-20 19:48:59][org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge.<init>(RegionFactoryCacheProviderBridge.java:61)]:Cache provider: org.hibernate.cache.EhCacheProvider
+ [INFO ][2011-07-20 19:48:59][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:276)]:Optimize cache for minimal puts: disabled
+ [INFO ][2011-07-20 19:48:59][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:285)]:Structured second-level cache entries: disabled
+ [INFO ][2011-07-20 19:48:59][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:305)]:Echoing all SQL to stdout
+ [INFO ][2011-07-20 19:48:59][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:314)]:Statistics: disabled
+ [INFO ][2011-07-20 19:48:59][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:318)]:Deleted entity synthetic identifier rollback: disabled
+ [INFO ][2011-07-20 19:48:59][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:333)]:Default entity-mode: pojo
+ [INFO ][2011-07-20 19:48:59][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:337)]:Named query checking : enabled
+ [INFO ][2011-07-20 19:48:59][org.hibernate.impl.SessionFactoryImpl.<init>(SessionFactoryImpl.java:187)]:building session factory
+ [WARN ][2011-07-20 19:48:59][net.sf.ehcache.config.ConfigurationFactory.parseConfiguration(ConfigurationFactory.java:127)]:No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/D:/Workspaces/MyEclipse%208.5/patent_006/WebRoot/WEB-INF/lib/ehcache-1.2.3.jar!/ehcache-failsafe.xml
+ [INFO ][2011-07-20 19:48:59][org.hibernate.impl.SessionFactoryObjectFactory.addInstance(SessionFactoryObjectFactory.java:105)]:Not binding factory to JNDI, no JNDI name configured
+ [INFO ][2011-07-20 19:48:59][org.springframework.orm.hibernate3.HibernateTransactionManager.afterPropertiesSet(HibernateTransactionManager.java:415)]:Using DataSource [org.apache.commons.dbcp.BasicDataSource@c51614] of Hibernate SessionFactory for HibernateTransactionManager
+ [WARN ][2011-07-20 19:48:59][org.hibernate.util.JDBCExceptionReporter.logExceptions(JDBCExceptionReporter.java:100)]:SQL Error: 102, SQLState: S0001
+ [ERROR][2011-07-20 19:48:59][org.hibernate.util.JDBCExceptionReporter.logExceptions(JDBCExceptionReporter.java:101)]:'limit' 附近有语法错误。
+ [INFO ][2011-07-20 19:50:35][org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:454)]:Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1a99561: startup date [Wed Jul 20 19:50:35 CST 2011]; root of context hierarchy
+ [INFO ][2011-07-20 19:50:35][org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)]:Loading XML bean definitions from class path resource [applicationContext-hibernate.xml]
+ [INFO ][2011-07-20 19:50:35][org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.registerDefaultFilters(ClassPathScanningCandidateComponentProvider.java:186)]:JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+ [INFO ][2011-07-20 19:50:35][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:138)]:JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+ [INFO ][2011-07-20 19:50:35][org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:537)]:Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@9a8a68: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,patentService,pageService,patentDao,pageDao,dataSource,sessionFactory,hibernateTemplate,transactionManager,txAdvice,org.springframework.aop.config.internalAutoProxyCreator,allServiceMethod,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0]; root of factory hierarchy
+ [INFO ][2011-07-20 19:50:36][org.hibernate.cfg.annotations.Version.<clinit>(Version.java:15)]:Hibernate Annotations 3.4.0.GA
+ [INFO ][2011-07-20 19:50:36][org.hibernate.cfg.Environment.<clinit>(Environment.java:543)]:Hibernate 3.3.1.GA
+ [INFO ][2011-07-20 19:50:36][org.hibernate.cfg.Environment.<clinit>(Environment.java:576)]:hibernate.properties not found
+ [INFO ][2011-07-20 19:50:36][org.hibernate.cfg.Environment.buildBytecodeProvider(Environment.java:709)]:Bytecode provider name : javassist
+ [INFO ][2011-07-20 19:50:36][org.hibernate.cfg.Environment.<clinit>(Environment.java:627)]:using JDK 1.4 java.sql.Timestamp handling
+ [INFO ][2011-07-20 19:50:36][org.hibernate.annotations.common.Version.<clinit>(Version.java:14)]:Hibernate Commons Annotations 3.1.0.GA
+ [INFO ][2011-07-20 19:50:36][org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:419)]:Binding entity from annotated class: jxust.patent.model.Patent
+ [INFO ][2011-07-20 19:50:36][org.hibernate.cfg.annotations.EntityBinder.bindTable(EntityBinder.java:422)]:Bind entity jxust.patent.model.Patent on table Patent
+ [INFO ][2011-07-20 19:50:36][org.hibernate.cfg.AnnotationConfiguration.secondPassCompile(AnnotationConfiguration.java:369)]:Hibernate Validator not found: ignoring
+ [INFO ][2011-07-20 19:50:36][org.springframework.orm.hibernate3.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:772)]:Building new Hibernate SessionFactory
+ [INFO ][2011-07-20 19:50:36][org.hibernate.cfg.search.HibernateSearchEventListenerRegister.enableHibernateSearch(HibernateSearchEventListenerRegister.java:53)]:Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+ [INFO ][2011-07-20 19:50:36][org.hibernate.connection.ConnectionProviderFactory.newConnectionProvider(ConnectionProviderFactory.java:95)]:Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+ [INFO ][2011-07-20 19:50:37][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:116)]:RDBMS: Microsoft SQL Server, version: 9.00.4035
+ [INFO ][2011-07-20 19:50:37][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:117)]:JDBC driver: Microsoft SQL Server JDBC Driver 3.0, version: 3.0.1301.101
+ [INFO ][2011-07-20 19:50:37][org.hibernate.dialect.Dialect.<init>(Dialect.java:175)]:Using dialect: org.hibernate.dialect.SQLServerDialect
+ [INFO ][2011-07-20 19:50:37][org.hibernate.transaction.TransactionFactoryFactory.buildTransactionFactory(TransactionFactoryFactory.java:62)]:Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+ [INFO ][2011-07-20 19:50:37][org.hibernate.transaction.TransactionManagerLookupFactory.getTransactionManagerLookup(TransactionManagerLookupFactory.java:80)]:No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+ [INFO ][2011-07-20 19:50:37][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:170)]:Automatic flush during beforeCompletion(): disabled
+ [INFO ][2011-07-20 19:50:37][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:174)]:Automatic session close at end of transaction: disabled
+ [INFO ][2011-07-20 19:50:37][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:189)]:Scrollable result sets: enabled
+ [INFO ][2011-07-20 19:50:37][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:197)]:JDBC3 getGeneratedKeys(): enabled
+ [INFO ][2011-07-20 19:50:37][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:205)]:Connection release mode: auto
+ [INFO ][2011-07-20 19:50:37][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:232)]:Default batch fetch size: 1
+ [INFO ][2011-07-20 19:50:37][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:236)]:Generate SQL with comments: disabled
+ [INFO ][2011-07-20 19:50:37][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:240)]:Order SQL updates by primary key: disabled
+ [INFO ][2011-07-20 19:50:37][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:244)]:Order SQL inserts for batching: disabled
+ [INFO ][2011-07-20 19:50:37][org.hibernate.cfg.SettingsFactory.createQueryTranslatorFactory(SettingsFactory.java:420)]:Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+ [INFO ][2011-07-20 19:50:37][org.hibernate.hql.ast.ASTQueryTranslatorFactory.<init>(ASTQueryTranslatorFactory.java:47)]:Using ASTQueryTranslatorFactory
+ [INFO ][2011-07-20 19:50:37][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:252)]:Query language substitutions: {}
+ [INFO ][2011-07-20 19:50:37][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:257)]:JPA-QL strict compliance: disabled
+ [INFO ][2011-07-20 19:50:37][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:262)]:Second-level cache: enabled
+ [INFO ][2011-07-20 19:50:37][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:266)]:Query cache: disabled
+ [INFO ][2011-07-20 19:50:37][org.hibernate.cfg.SettingsFactory.createRegionFactory(SettingsFactory.java:405)]:Cache region factory : org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge
+ [INFO ][2011-07-20 19:50:37][org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge.<init>(RegionFactoryCacheProviderBridge.java:61)]:Cache provider: org.hibernate.cache.EhCacheProvider
+ [INFO ][2011-07-20 19:50:37][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:276)]:Optimize cache for minimal puts: disabled
+ [INFO ][2011-07-20 19:50:37][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:285)]:Structured second-level cache entries: disabled
+ [INFO ][2011-07-20 19:50:37][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:305)]:Echoing all SQL to stdout
+ [INFO ][2011-07-20 19:50:37][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:314)]:Statistics: disabled
+ [INFO ][2011-07-20 19:50:37][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:318)]:Deleted entity synthetic identifier rollback: disabled
+ [INFO ][2011-07-20 19:50:37][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:333)]:Default entity-mode: pojo
+ [INFO ][2011-07-20 19:50:37][org.hibernate.cfg.SettingsFactory.buildSettings(SettingsFactory.java:337)]:Named query checking : enabled
+ [INFO ][2011-07-20 19:50:37][org.hibernate.impl.SessionFactoryImpl.<init>(SessionFactoryImpl.java:187)]:building session factory
+ [WARN ][2011-07-20 19:50:37][net.sf.ehcache.config.ConfigurationFactory.parseConfiguration(ConfigurationFactory.java:127)]:No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/D:/Workspaces/MyEclipse%208.5/patent_006/WebRoot/WEB-INF/lib/ehcache-1.2.3.jar!/ehcache-failsafe.xml
+ [INFO ][2011-07-20 19:50:37][org.hibernate.impl.SessionFactoryObjectFactory.addInstance(SessionFactoryObjectFactory.java:105)]:Not binding factory to JNDI, no JNDI name configured
+ [INFO ][2011-07-20 19:50:37][org.springframework.orm.hibernate3.HibernateTransactionManager.afterPropertiesSet(HibernateTransactionManager.java:415)]:Using DataSource [org.apache.commons.dbcp.BasicDataSource@8c858a] of Hibernate SessionFactory for HibernateTransactionManager
+ 
