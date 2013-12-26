@@ -1,5 +1,9 @@
 <%@ page language="java" import="java.util.*" pageEncoding="gbk"%>
 <%@ taglib prefix="s" uri="/struts-tags"%>
+<%
+String path = request.getContextPath();
+String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+%>
 
   <table width="720" border="1" cellpadding=0 cellspacing=0 align="center">
     <tr>
@@ -57,4 +61,3 @@
       <td colspan="4"><s:property value="patent.intro" escape="false"/>&nbsp;</td>
     </tr>
   </table>
-

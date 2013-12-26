@@ -1,7 +1,7 @@
 #tab{
 	width:750px;
 	height:800px;
-	overflow:hidden;
+	overflow-x:hidden;
 }
 #title{
 	width:720px;

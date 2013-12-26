@@ -99,7 +99,7 @@ input {
 				<label>主分类号：</label>
 			</td>
 			<td>
-					<input type="text" name="patent.mainClassNumber" id="textfield4">
+					<input type="text" name="patent.mainClassNumber" id="textfield4" value="<s:property value="patent.mainClassNumber"/>">
 				<img src="<%=basePath%>images/pic7.gif" onclick="openWindow1()" align="right"/>
 			</td>
 		</tr>
@@ -108,7 +108,7 @@ input {
 				<label>分类号：</label>
 			</td>
 			<td>
-				<input type="text" name="patent.classNumber" id="textfield5">
+				<input type="text" name="patent.classNumber" id="textfield5" value="<s:property value="patent.classNumber"/>">
 				<img src="<%=basePath%>images/pic7.gif" border="0" onclick="openWindow2()" align="right"/>
 			</td>
 		</tr>

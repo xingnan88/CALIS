@@ -146,20 +146,31 @@ public class PatentDaoImpl implements PatentDao
 	}
 
 	/*
-	 * @Test public void testFindAll() { ClassPathXmlApplicationContext ctx =
-	 * new ClassPathXmlApplicationContext("applicationContext-hibernate.xml");
-	 * HibernateTemplate hibernateTemplate=(HibernateTemplate)
-	 * ctx.getBean("hibernateTemplate"); PatentDaoImpl pdi=new PatentDaoImpl();
-	 * pdi.setHibernateTemplate(hibernateTemplate); List<Patent>
-	 * patents=pdi.findAll(); System.out.print(patents.size()); }
-	 * 
-	 * @Test public void testList() { ClassPathXmlApplicationContext ctx = new
-	 * ClassPathXmlApplicationContext("applicationContext-hibernate.xml");
-	 * HibernateTemplate hibernateTemplate=(HibernateTemplate)
-	 * ctx.getBean("hibernateTemplate"); PatentDaoImpl pdi=new PatentDaoImpl();
-	 * pdi.setHibernateTemplate(hibernateTemplate); Patent p=new Patent();
-	 * p.setMainClassNumber("的撒发生的"); p.setOpenNumber("543345"); List<Patent>
-	 * patents=pdi.list(p); System.out.println(patents.size()); }
+	 @Test 
+	 public void testFindAll() 
+	 { 
+			 ClassPathXmlApplicationContext ctx =new ClassPathXmlApplicationContext("applicationContext-hibernate.xml");
+			 HibernateTemplate hibernateTemplate=(HibernateTemplate)
+			 ctx.getBean("hibernateTemplate"); PatentDaoImpl pdi=new PatentDaoImpl();
+			 pdi.setHibernateTemplate(hibernateTemplate); 
+			 List<Patent> patents=pdi.findAll(); 
+			 System.out.print(patents.size()); 
+	 }
+	 
+	 @Test 
+	 public void testList() 
+	 { 
+	 ClassPathXmlApplicationContext ctx = new
+	 ClassPathXmlApplicationContext("applicationContext-hibernate.xml");
+	 HibernateTemplate hibernateTemplate=(HibernateTemplate)
+	 ctx.getBean("hibernateTemplate"); 
+	 PatentDaoImpl pdi=new PatentDaoImpl();
+	  pdi.setHibernateTemplate(hibernateTemplate); 
+	  Patent p=new Patent();
+	  p.setMainClassNumber("的撒发生的"); 
+	  p.setOpenNumber("543345"); 
+	  List<Patent> patents=pdi.list(p); 
+	  System.out.println(patents.size()); }
 	 */
 
 /*	@Test

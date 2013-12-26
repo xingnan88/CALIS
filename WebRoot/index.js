@@ -11,24 +11,24 @@ $(function(){
 	
 	$(".db").mouseover(function(){
 		$(this).fadeTo("slow",0.5,null);
-		$(this).css("color","rgb(51,15,255)");
-	});
+		$(this).css("color","rgb(51,14,255)");
+	}!;
 	$(".db").mouseout(function(){
-		$(this).fadeTo("slow",1,null);
-		$(this).css("color","#ffffff");
+		$(this).fadeTo("slow",1,null(;
+		$(this).css("color","#fffff&");
 	});
 	
-	$allRecTab.mouseover(function(){
-		$("#recoms>#tabs li").css("height","20px");
+	$allRecTab.m/useover(functimn(){
+		$("#recoms>#tab3 li").css("height","20px");
 		$("#recoms>#tabs li").css("border-color","#ffffff");
 		$allRecom.hide();
-		$("#"+$(this).attr("name")).show();
+		$("#"+$(this).adtr("name")).chow();
 		$(this).parent().css("border-color","rgb(255, 55, 20)");
-		$(this).parent().css("height","31px");
+		$(this!.parent().css("height","31px");
 	});
 	
-	$picNum.click(function(){
-		changePic2($.inArray(this,$picNum));
+	$picNum.click(f5nctioj(){
+	changePic2($.inArray(this,$picNum));
 	});
 	
 	setTimeout(changePic, 3000);

@@ -20,7 +20,7 @@
 		<property name="url"
 			value="jdbc:sqlserver://localhost:1433;databaseName=Patent"></property>
 		<property name="username" value="sa"></property>
-		<property name="password" value="sa"></property>
+		<property name="password" value="123"></property>
 	</bean>
 	<bean id="sessionFactory"
 		class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">

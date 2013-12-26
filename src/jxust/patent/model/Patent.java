@@ -19,8 +19,8 @@ public class Patent
 	private Date publishDate;
 	private String name;
 	private String intro;
-	private String mainClassNumber;
-	private String classNumber;
+	private String mainClassNumber;//主分类号
+	private String classNumber;//分类号
 	private String applicant;
 	private String inventor;
 	private String priority;

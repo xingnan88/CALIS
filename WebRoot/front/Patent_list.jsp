@@ -35,13 +35,15 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<tr
 						onmousemove="this.style.backgroundColor='#FFF68F'"
 						onmouseout="this.style.backgroundColor='#FFFAFA'">
-					<input type="hidden" value="<s:property value="#p.id"/>"/>
 					<td>
 						<s:property value="#p.number"/> 
 					</td>
 					<td>
 						<s:property value="#p.name"/>
 					</td>
+					<form method="post" action="Patent_read">
+    					<input type="hidden" name="id" value="<s:property value="#p.id"/> "/>
+    				</form>
 					</tr>
 				</s:iterator>
     	</table>

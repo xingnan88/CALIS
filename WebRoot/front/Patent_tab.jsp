@@ -21,13 +21,15 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 	<SCRIPT type="text/javascript" src="js/jquery-1.6.2.js"></SCRIPT>
 	<SCRIPT type="text/javascript" src="js/submitTab.js"></SCRIPT>
 	<link rel="stylesheet" type="text/css" href="css/tab.css">
+
+
   </head>
   
   <body>
   	<form action="Patent_tab" method="post" id="tabForm">
   		<input type="hidden" id="page" name="page" value="1"/>
   		<input type="hidden" id="mainClassNumber" name="type" value="mainClassNumber"/>
-  		<input type="hidden" id="content" name="content" value="采矿加工"/>
+  		<input type="hidden" id="content" name="content"/>
   	</form>
 	<div id="tab">
     	<div id="title">
@@ -44,24 +46,27 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
         	<div class="list">
             	<table>
                 	<tr>
-                    	<th style="width:220px;">专利申请号</th>
-                        <th style="width:394px;">专利名称</th>
-                        <th style="width:72px;">申请人</th>
+                    	<th style="width:150px;">专利申请号</th>
+                        <th style="width:324px;">专利名称</th>
+                        <th style="width:172px;">申请人</th>
                     </tr>
                    <label> --------------------------------------------------------------------------</label>
                  	<s:iterator value="pageBean.list" var="p" status="status">
 					<tr>
-						<input type="hidden" value="<s:property value="#p.id"/>"/>
-						<td style="width:220px;">
+						<form method="post" action="Patent_read">
+						<input type="hidden" value="<s:property value="#p.id"/>" name="id" id="id"/>
+						</form>
+						<td style="width:150px;">
 							<s:property value="#p.number"/> 
 						</td>
-						<td style="width:394px;">
+						<td style="width:324px;">
 							<s:property value="#p.name"/>
 						</td>
-						<td style="width:72px;">
+						<td style="width:212px;">
 							<s:property value="#p.applicant"/>
 						</td>
 					</tr>
+					
 				</s:iterator>
                 </table>
                 <label> --------------------------------------------------------------------------</label>
@@ -71,6 +76,5 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
    			 </div>
             </div>
         </div>
-  
 </body>
 </html>

@@ -74,7 +74,7 @@ public class PatentAction extends ActionSupport implements ServletRequestAware, 
 		return SUCCESS;
 	}
 
-	public String add() throws IOException, ParseException// 添加
+	public String add()// 添加
 	{
 		String path = Upload.getWebPath() + "upload/";
 		if (picture1FileName != null && picture1 != null)
@@ -88,8 +88,16 @@ public class PatentAction extends ActionSupport implements ServletRequestAware, 
 			this.patent.setSpecification(path + pictureFileName);
 		}
 
-		this.patent.setApplicationDate(DateFormat.toDate(year1, month1, day1));// 申请日，公开日
-		this.patent.setPublishDate(DateFormat.toDate(year2, month2, day2));
+		try
+		{
+			this.patent.setApplicationDate(DateFormat.toDate(year1, month1, day1));// 申请日，公开日
+			this.patent.setPublishDate(DateFormat.toDate(year2, month2, day2));
+		} catch (ParseException e)
+		{
+			this.message="日期输入有误";
+			e.printStackTrace();
+			return ERROR;
+		}
 
 		ps.add(patent);
 		return SUCCESS;

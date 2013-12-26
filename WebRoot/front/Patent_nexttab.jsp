@@ -43,23 +43,24 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
         	<div class="list">
             	<table>
                 	<tr>
-                    	<th style="width:220px;">专利申请号</th>
-                        <th style="width:394px;">专利名称</th>
-                        <th style="width:72px;">申请人</th>
+                    	<th style="width:150px;">专利申请号</th>
+                        <th style="width:324px;">专利名称</th>
+                        <th style="width:172px;">申请人</th>
                     </tr>
                     <tr>
                    <label> --------------------------------------------------------------------------</label>
                  	<s:iterator value="pageBean.list" var="p" status="status">
-					<tr onmousemove="this.style.backgroundColor='#FFF68F'"
-						onmouseout="this.style.backgroundColor='#FFFAFA'">
-				
-					<td style="width:220px;">
+					<tr>
+					<form method="post" action="Patent_read">
+						<input type="hidden" value="<s:property value="#p.id"/>" name="id" id="id"/>
+					</form>
+					<td style="width:150px;">
 						<s:property value="#p.number"/> 
 					</td>
-					<td style="width:394px;">
+					<td style="width:324px;">
 						<s:property value="#p.name"/>
 					</td>
-					<td style="width:72px;">
+					<td style="width:172px;">
 						<s:property value="#p.applicant"/>
 					</td>
 					</tr>

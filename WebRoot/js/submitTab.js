@@ -1,7 +1,8 @@
 $(function() {
 	
-	//提交表单，返回数据
+	//提交表单，返回数据,避开地址栏传中文问题
 	$("#firstForm").submit();
+
 	
 	//点击title下的a是触发事件，提交表单
 	$("#title a").click(function() {
@@ -11,8 +12,9 @@ $(function() {
 	
 	//list下的tr被点击时，链接地址Patent_read?id=" + inputNode，调action
 	$(".list tr").click(function() {
-		var inputNode=$(this).find("input").val();
-		$.get("Patent_read?id=" + inputNode,callback);
+//		var idNode=$(this).find("input").val();
+//		$.post("Patent_read?id=" + idNode,null,callback);
+		$(this).find("form").submit();
 	});
 	
 	//鼠标移动到title下的a时改变其样式

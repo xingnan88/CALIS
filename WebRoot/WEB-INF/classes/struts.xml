@@ -11,6 +11,7 @@
 		<action name="*_*" class="jxust.patent.action.{1}Action" method="{2}">
 			<result>/admin/{1}_{2}.jsp</result>
 			<result name="input">/admin/{1}_{2}.jsp</result>
+			<result name="error">/admin/error.jsp</result>
 		</action>
 	</package>
 	

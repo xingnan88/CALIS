@@ -1,10 +1,6 @@
 $(function() {
 	$("table tr").click(function() {
-		var inputNode=$(this).find("input").val();
-		$.get("Patent_read?id=" + inputNode,callback);
+		$(this).find("form").submit();
 	});
 })
 
-function callback(data) {
-	$("#divtable").html(data);
-}

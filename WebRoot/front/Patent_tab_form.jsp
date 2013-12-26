@@ -23,10 +23,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
-  	<form action="Patent_tab" method="post" id="firstForm">
+  <%--为了解决地址栏传中文问题--%>
+  <form action="Patent_tab" method="post" id="firstForm">
   		<input type="hidden" id="page" name="page" value="1"/>
   		<input type="hidden" id="mainClassNumber" name="type" value="mainClassNumber"/>
   		<input type="hidden" id="content" name="content" value="采矿加工"/>
-  	</form>
+  </form>
 </body>
 </html>

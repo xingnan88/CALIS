@@ -1,6 +1,14 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <tree id="0">
 	<item text="IPC分类" id="books" open="1" im0="tombs.gif" im1="tombs.gif" im2="iconSafe.gif" call="1" select="1">
+		<item text="特色专利" id="characteristic" im0="folderClosed.gif" im1="folderOpen.gif" im2="folderClosed.gif">
+			<item text="采矿加工" id="ck" im0="book_titel.gif" im1="book.gif" im2="book_titel.gif"></item>
+			<item text="安全与环境工程" id="aq" im0="book_titel.gif" im1="book.gif" im2="book_titel.gif"></item>
+			<item text="矿物加工工程" id="kw" im0="book_titel.gif" im1="book.gif" im2="book_titel.gif"></item>
+			<item text="冶金工程" id="yj" im0="book_titel.gif" im1="book.gif" im2="book_titel.gif"></item>
+			<item text="材料工程" id="cl" im0="book_titel.gif" im1="book.gif" im2="book_titel.gif"></item>
+			<item text="矿冶设备工程" id="ky" im0="book_titel.gif" im1="book.gif" im2="book_titel.gif"></item>
+		</item>
 		<item text="A | 人类生活必需" id="mystery" im0="folderClosed.gif" im1="folderOpen.gif" im2="folderClosed.gif">
 			<item text="Lawrence Block" id="lb" im0="book_titel.gif" im1="book.gif" im2="book_titel.gif">
 				<item text="All the Flowers Are Dying" id="lb_1" im0="book_titel.gif" im1="book.gif" im2="book_titel.gif"/>
@@ -57,5 +65,6 @@
 			<item text="Garth Nix" id="gn" im0="book_titel.gif" im1="book.gif" im2="book_titel.gif"></item>
 			<item text="Ann Brashares" id="ab" im0="book_titel.gif" im1="book.gif" im2="book_titel.gif"></item>
 		</item>
+
 	</item>
 </tree> 

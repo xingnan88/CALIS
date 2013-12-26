@@ -49,6 +49,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<td>
 						<s:property value="#p.name"/>
 					</td>
+    				<form method="post" action="Patent_read">
+    					<input type="hidden" name="id" value="<s:property value="#p.id"/> "/>
+    				</form>
 					</tr>
 				</s:iterator>
     </table>

@@ -129,7 +129,7 @@ input {
 			<td>
 				<input type="text" name="patent.mainClassNumber" id="textfield4">
 				<img src="<%=basePath%>images/pic7.gif" onclick="openWindow1()"
-					align="right" />
+					align="right" style="cursor: pointer;" />
 			</td>
 		</tr>
 		<tr>
@@ -141,7 +141,7 @@ input {
 			<td>
 				<input type="text" name="patent.classNumber" id="textfield5">
 				<img src="<%=basePath%>images/pic7.gif" border="0"
-					onclick="openWindow2()" align="right" />
+					onclick="openWindow2()" align="right" style="cursor: pointer;" />
 			</td>
 		</tr>
 		<tr>
