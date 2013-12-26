@@ -1,0 +1,40 @@
+@CHARSET "UTF-8";
+#body{
+	background-color: #FFFAFA;
+}
+#head{
+	height: 40px;
+	width: 650px;
+	margin:10px;
+}
+	h3{
+		color: #222222;
+    	font-family: Helvetica,Arial,sans-serif;
+    	font-weight: bold;
+	}
+#divtable{
+	border:1px solid black;
+	padding:20px; 
+}
+	#divtable h5{
+		color: #222222;
+    	font-family: Helvetica,Arial,sans-serif;
+    	font-weight: bold;
+	}
+	#divtable td{
+		cursor:pointer;
+		height: 10px;
+		width: 325px;
+	}
+	
+	.page {
+		margin-top: 20px;
+		margin-left: 150px;
+	  }
+	.page a{
+		text-decoration:none;
+		font-size: 12px;
+		margin-left: 5px;
+		color: #0066CC ;
+	}
+	

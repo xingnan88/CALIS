@@ -289,9 +289,9 @@ input {
 		<tr align="center">
 			<td colspan="2">
 				<img src="<%=basePath%>images/qd.jpg"
-					onclick="document.addInput.submit()" />
+					onclick="document.addInput.submit()" style="cursor: pointer;"/>
 				<img src="<%=basePath%>images/cz.jpg"
-					onclick="document.addInput.reset()" />
+					onclick="document.addInput.reset()" style="cursor: pointer;"/>
 			</td>
 		</tr>
 	</table>

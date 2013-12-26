@@ -1,6 +1,8 @@
 package jxust.patent.vo;
 
+import org.springframework.stereotype.Component;
 
+@Component(value="searchInfo")
 public class SearchInfo
 {
 	private String number;

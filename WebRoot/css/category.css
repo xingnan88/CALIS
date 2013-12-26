@@ -1,0 +1,36 @@
+@CHARSET "UTF-8";
+#boxs{
+	height: 750px;
+	width: 700px;
+	margin-top:25px;
+	margin-left:1px;
+}
+#box{
+	background-color:white;
+	height: 200px;
+	width: 300px;
+	border-radius: 6px 6px 6px 6px;
+	border:1px solid #5C5C5C; 
+	margin-top:20px;
+	margin-left:20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+#head{
+	background-color:#00CD00;
+	height: 40px;
+	width: 300px;
+}
+#content{
+	font-size: 13px;
+	font-family: sans-serif;
+}
+#content a{
+	padding: 5px;
+}
+
+h3{
+	color: #222222;
+    font-family: Helvetica,Arial,sans-serif;
+    font-weight: bold;
+}

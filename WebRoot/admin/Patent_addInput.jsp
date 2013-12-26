@@ -127,7 +127,7 @@ input {
 				</label>
 			</td>
 			<td>
-				<input type="text" name="searchInfo.mainClassNumber" id="textfield4">
+				<input type="text" name="patent.mainClassNumber" id="textfield4">
 				<img src="<%=basePath%>images/pic7.gif" onclick="openWindow1()"
 					align="right" />
 			</td>
@@ -139,7 +139,7 @@ input {
 				</label>
 			</td>
 			<td>
-				<input type="text" name="searchInfo.classNumber" id="textfield5">
+				<input type="text" name="patent.classNumber" id="textfield5">
 				<img src="<%=basePath%>images/pic7.gif" border="0"
 					onclick="openWindow2()" align="right" />
 			</td>
@@ -330,10 +330,10 @@ input {
 		<tr align="center">
 			<td colspan="2">
 				<img src="<%=basePath%>images/qd.jpg"
-					onclick="document.addInput.submit()" />
+					onclick="document.addInput.submit()" style="cursor: pointer;" />
 				<img src="<%=basePath%>images/cz.jpg"
-					onclick="document.addInput.reset()" />
-				<img src="<%=basePath%>images/yl.jpg" onclick="preview()" />
+					onclick="document.addInput.reset()" style="cursor: pointer;"/>
+				<img src="<%=basePath%>images/yl.jpg" onclick="preview()" style="cursor: pointer;"/>
 			</td>
 		</tr>
 	</table>

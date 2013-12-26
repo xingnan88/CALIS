@@ -50,9 +50,11 @@ public class PatentAction extends ActionSupport implements ServletRequestAware, 
 	private String imageFileName;
 	private String imagePath;
 	private String pagePath;
+	private String message;//´íÎóÐÅÏ¢
 
-	private SearchInfo searchInfo = new SearchInfo();// ËÑË÷
-	private String type, content;
+	private SearchInfo searchInfo;// ËÑË÷
+	private String type;
+	private String content;
 
 	private PatentService ps;
 	private PageService pageService;
@@ -338,6 +340,7 @@ public class PatentAction extends ActionSupport implements ServletRequestAware, 
 		return searchInfo;
 	}
 
+	@Resource(name="searchInfo")
 	public void setSearchInfo(SearchInfo searchInfo)
 	{
 		this.searchInfo = searchInfo;
@@ -486,6 +489,14 @@ public class PatentAction extends ActionSupport implements ServletRequestAware, 
 	public void setMyFileFileName(String myFileFileName)
 	{
 		this.myFileFileName = myFileFileName;
+	}
+
+	public String getMessage() {
+		return message;
+	}
+
+	public void setMessage(String message) {
+		this.message = message;
 	}
 
 }

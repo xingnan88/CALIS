@@ -43,7 +43,7 @@ input {
 	-khtml-border-radius: 0.4em;
 }
 </style>
-<form name="updateInput" method="post" action="admin/Patent_update">
+<form name="update" method="post" action="admin/Patent_update">
 	<input type="hidden" name="patent.id"
 		value="<s:property value="patent.id"/>" />
 	<table border="0">
@@ -99,7 +99,7 @@ input {
 				<label>主分类号：</label>
 			</td>
 			<td>
-					<input type="text" name="searchInfo.mainClassNumber" id="textfield4">
+					<input type="text" name="patent.mainClassNumber" id="textfield4">
 				<img src="<%=basePath%>images/pic7.gif" onclick="openWindow1()" align="right"/>
 			</td>
 		</tr>
@@ -108,7 +108,7 @@ input {
 				<label>分类号：</label>
 			</td>
 			<td>
-				<input type="text" name="searchInfo.classNumber" id="textfield5">
+				<input type="text" name="patent.classNumber" id="textfield5">
 				<img src="<%=basePath%>images/pic7.gif" border="0" onclick="openWindow2()" align="right"/>
 			</td>
 		</tr>
@@ -230,11 +230,11 @@ input {
 		<tr align="center">
 			<td colspan="2">
 				<img src="<%=basePath%>images/qd.jpg"
-					onclick="document.addInput.submit()" />
+					onclick="document.update.submit()"  style="cursor: pointer;"/>
 				<img src="<%=basePath%>images/cz.jpg"
-					onclick="document.addInput.reset()" />
+					onclick="document.update.reset()" style="cursor: pointer;"/>
 				<img src="<%=basePath%>images/yl.jpg"
-					onclick="preview()" />
+					onclick="preview()" style="cursor: pointer;"/>
 			</td>
 		</tr>
 	</table>

@@ -13,5 +13,12 @@
 			<result name="input">/admin/{1}_{2}.jsp</result>
 		</action>
 	</package>
+	
+	<package name="front" namespace="/" extends="struts-default">
+		<action name="*_*" class="jxust.patent.action.{1}Front" method="{2}">
+			<result>/front/{1}_{2}.jsp</result>
+			<result name="input">/front/{1}_{2}.jsp</result>
+		</action>
+	</package>
 
 </struts>    

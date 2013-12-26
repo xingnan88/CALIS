@@ -1,0 +1,228 @@
+@charset "utf-8";
+body {
+	background-image: url('../images/images/bg.png');
+	background-color: rgb(234, 181, 169);
+	background-repeat: repeat-x;
+	background-attachment: fixed;
+	font-size: 13px;
+}
+
+body>div,body>table { 
+	border: 1px solid rgb(255, 55, 20);
+}
+
+table {
+	border-collapse: collapse;
+}
+
+span.space {
+	display: block;
+	padding-left: 35px;
+}
+
+li {
+	display: inline-table;
+	list-style: none;
+	float: left;
+}
+
+a {
+	text-decoration: none;
+	xfont-size: 12px;
+	color: black;
+}
+
+a:hover {
+	/*border-bottom: 1px dashed #884400;*/
+}
+
+.title {
+	display: block;
+	background-repeat: no-repeat;
+	background-position: 5px center;
+	padding-left: 35px;
+	font-size: 15px;
+	font-weight: bold;
+	padding-top: 6px;
+	vertical-align: middle;
+}
+
+.titlebg {
+	background-image: url('../images/images/title.png');
+	background-position: right 0;
+	background-repeat: repeat-y;
+	border-bottom: 2px solid rgb(253, 182, 56);
+	height: 27px;
+}
+
+span.i {
+	display: block;
+	width: 230px;
+	height: 20px;
+	background-image: url('../images/images/i10.png');
+	background-position: 0 2px;
+	background-repeat: no-repeat;
+	margin: 2px 0px 2px 2px;
+	padding-left: 11px;
+	overflow: hidden;
+}
+
+/*头部横幅*/ /*banner*/
+div#banner {
+	width: 1020px;
+	height: 125px;
+	background-color: white;
+	margin: 0 auto;
+	background-image: url('../images/isp4nm-img/isp4nm-banner70.png');
+	background-repeat: no-repeat;
+	background-position: 3px 10px;
+}
+
+#navigation {
+	width: 950px;
+	margin: auto;
+}
+
+#navigation tr {
+	background:	url('../images/images/nav-c.png') repeat-x;
+	font-size: 13px;
+	font-family: "黑体";
+	height: 32px;
+	color: white;
+}
+
+#navigation td.item {
+	text-align: center;
+	background-image: url('../images/images/nav-separator.gif');
+	background-position: center right;
+	background-repeat: no-repeat;
+}
+
+td.nav-l,#nav-l {
+	width: 36px;
+	background-image: url('../images/images/nav-l.png');
+	background-repeat: no-repeat;
+}
+
+td.nav-r,#nav-r {
+	width: 4px;
+	background-image: url('../images/images/nav-r.png');
+	background-repeat: no-repeat;
+}
+
+/*mian，整个中间主体区域。包括left和content*/
+#main {
+	width: 1020px;
+	margin: auto;
+	margin-top: 7px;
+	background-color: white;
+}
+
+/*左侧边*/
+#left {
+	width: 245px;
+	margin-top: 5px;
+	background-color: #FFFAFA;
+	height: 850px;
+	overflow: hidden;
+}	
+	#buttons{
+		width:245px;
+		margin-top: -350px;
+		}
+	.white {
+    background: none repeat scroll 0 0 #CD3333  ;
+    border: 3px solid #FFFF00 ;
+    color: #FFFFFF;
+    font-family: "Arial";
+    font-weight: bold;
+    letter-spacing: -1px;
+    text-shadow: 1px 1px 4px #000000;
+    text-transform: uppercase;
+	}
+	.white:hover{
+	background-color:#FF0000;
+	}
+	.button {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    font-size: 15px;
+    margin: 10px;
+    outline: medium none;
+    padding-top:15px;
+    padding-bottom:10px;
+    padding-left:60px;
+    padding-right:60px;
+    margin-left:20px;
+    position: relative;
+    text-decoration: none;
+    white-space: nowrap;
+	}
+
+/*主体内容区*/ /*content*/
+#content {
+	width: 765px;
+	margin-top: 5px;
+	background-color: #FFFAFA;
+	border-left:3px solid #EEB422;
+}
+ 	iframe{
+ 		padding:0px;
+		border-style:none;
+		width:765px;
+		height:845px;
+		}
+
+
+/*links，友情链接*/
+#links {
+	width: 1020px;
+	margin: 5px auto;
+	background-color: white;
+}
+#links .titlebg {
+	background-image: url("../images/images/rec-nav.png");
+	background-repeat: repeat-x;
+}
+
+#links .title {
+	background-image: url("../images/images/star.png");
+}
+
+#links div.title+div {
+	padding: 5px 15px;
+	text-align: center;
+}
+
+#links img {
+	width: 88px;
+	height: 31px;
+	margin: 5px;
+	border: 1px solid rgb(93, 83, 73);
+}
+
+#links img:hover {
+	border: 1px solid rgb(254, 138, 1);
+}
+
+/*policy底部声明*/
+#policy {
+	margin: 20px;
+	text-align: center;
+	color: rgb(51,15,255);;
+	font-size: 12px;
+	border: none;
+	clear:both;
+}
+
+#policy a {
+	display: inline-table;
+	color: rgb(51,15,255);
+	width: 70px;
+}
+
+#policy a:hover {
+	color: rgb(101, 10, 1);
+}

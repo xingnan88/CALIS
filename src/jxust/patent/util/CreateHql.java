@@ -110,7 +110,8 @@ public class CreateHql
 		}else if(type.equals("×¨ÀûÉêÇëÈË"))
 		{
 			return "applicant";
-		}
+		}else if(type.equals("mainClassNumber"))
+			return "mainClassNumber";
 		return null;
 
 	}

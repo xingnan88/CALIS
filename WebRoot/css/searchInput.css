@@ -1,0 +1,28 @@
+@CHARSET "UTF-8";
+label {
+	width: 160px;
+	font-size: 14px;
+}
+
+table {
+	border:0px;
+	margin-left: 40px;
+	margin-top: 20px;
+}
+td {
+	height:35px;
+}
+
+input {
+	padding: 2px;
+	width: 500px;
+	height: 20px;
+	border: 1px solid #ddd;
+	background: #FFFFFF;
+	font: bold 0.95em arial, sans-serif;
+	border-radius: 6px 6px 6px 6px;
+}
+
+img {
+	cursor: pointer;
+}

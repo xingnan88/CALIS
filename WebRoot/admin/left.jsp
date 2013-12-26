@@ -1,28 +1,17 @@
 <%@ page language="java" import="java.util.*" pageEncoding="gbk"%>
-<%@ taglib prefix="s" uri="/struts-tags"%>
 <%
 	String path = request.getContextPath();
 	String basePath = request.getScheme() + "://"
 			+ request.getServerName() + ":" + request.getServerPort()
 			+ path + "/";
 %>
-
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
-	<head>
-		<base href="<%=basePath%>">
-		<title>left</title>
-		<meta http-equiv="pragma" content="no-cache">
-		<meta http-equiv="cache-control" content="no-cache">
-		<meta http-equiv="expires" content="0">
-		<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
-		<meta http-equiv="description" content="This is my page">
-		<script src="<%=basePath%>js/prototype.lite.js" type="text/javascript"></script>
-		<script src="<%=basePath%>js/moo.fx.js" type="text/javascript"></script>
-		<script src="<%=basePath%>js/moo.fx.pack.js" type="text/javascript"></script>
-		<script src="<%=basePath%>js/dhx/dhtmlxcommon.js"></script>
-		<script src="<%=basePath%>js/dhx/dhtmlxtree.js"></script>
-		<style>
+<head>
+	<title>管理页面</title>
+	<base href="<%=basePath%>">
+	<script src="<%=basePath%>js/prototype.lite.js" type="text/javascript"></script>
+	<script src="<%=basePath%>js/moo.fx.js" type="text/javascript"></script>
+	<script src="<%=basePath%>js/moo.fx.pack.js" type="text/javascript"></script>
+	<style>
 body {
 	font: 12px Arial, Helvetica, sans-serif;
 	color: #000;
@@ -161,80 +150,52 @@ H1 a {
 	text-decoration: none;
 }
 </style>
+</head>
 
-	</head>
-
-	<body>
-		<table width="100%" height="280" border="0" cellpadding="0"
-			cellspacing="0" bgcolor="#EEF2FB">
-			<tr>
-				<td width="182" valign="top">
-					<div id="container">
-						<h1 class="type">
-							<a href="javascript:void(0)">专利信息管理</a>
-						</h1>
-						<div class="content">
-							<table width="100%" border="0" cellspacing="0" cellpadding="0">
-								<tr>
-									<td>
-										<img src="images/menu_topline.gif" width="182" height="5" />
-									</td>
-								</tr>
-							</table>
-							<ul class="MM">
-								<li>
-									<a href="admin/Patent_list?page=1" target="main">专利信息</a>
-								</li>
-								<li>
-									<a href="admin/Patent_addInput" target="main">专利添加</a>
-								</li>
-								<li>
-									<a href="admin/Patent_searchInput" target="main">高级搜索</a>
-								</li>
-							</ul>
-						</div>
-						<h1 class="type">
-							<a href="javascript:void(0)">专利分类</a>
-						</h1>
-						<div class="content">
-							<table width="100%" border="0" cellspacing="0" cellpadding="0">
-								<tr>
-									<td>
-										<img src="images/menu_topline.gif" width="182" height="5" />
-									</td>
-								</tr>
-							</table>
-							<ul class="MM">
-								
-							<div id="treeboxbox_tree"/>
-							<script>
-								function doLog(str){
-									var log = document.getElementById("logarea");
-									log.value=str;
-								}
-								function tonclick(id){
-									doLog(tree.getItemText(id));
-								};						
-								tree=new dhtmlXTreeObject("treeboxbox_tree","100%","100%",0);
-								tree.setImagePath("<%=basePath%>images/imgs/csh_bluebooks/");			
-								tree.setOnClickHandler(tonclick);
-								tree.loadXML("<%=basePath%>admin/tree3.xml");
-							</script>
-								
-							</ul>
-						</div>
+<body>
+	<table width="100%" height="280" border="0" cellpadding="0"
+		cellspacing="0" bgcolor="#EEF2FB">
+		<tr>
+			<td width="182" valign="top">
+				<div id="container">
+					<h1 class="type">
+						<a href="javascript:void(0)">专利管理</a>
+					</h1>
+					<div class="content">
+						<table width="100%" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<td>
+									<img src="images/menu_topline.gif" width="182" height="5" />
+								</td>
+							</tr>
+						</table>
+						<ul class="MM">
+							<li>
+								<a href="admin/Patent_list?page=1" target="main">专利信息</a>
+							</li>
+							<li>
+								<a href="admin/categoryList.jsp" target="main">专利分类</a>
+							</li>
+							<li>
+								<a href="admin/Patent_addInput" target="main">专利添加</a>
+							</li>
+							<li>
+								<a href="admin/Patent_searchInput" target="main">高级搜索</a>
+							</li>
+						</ul>
 					</div>
-					<script type="text/javascript">
-					var contents = document.getElementsByClassName('content');
-					var toggles = document.getElementsByClassName('type');
-					var myAccordion = new fx.Accordion(toggles, contents, {
-						opacity : true,
-						duration : 400
-					});
-					myAccordion.showThisHideOpen(contents[0]);
-					</script>
-				</td>
-			</tr>
-		</table>
-	</body>
+				</div>
+				<script type="text/javascript">
+				var contents = document.getElementsByClassName('content');
+				var toggles = document.getElementsByClassName('type');
+				var myAccordion = new fx.Accordion(toggles, contents, {
+				opacity : true,
+				duration : 400
+				});
+				myAccordion.showThisHideOpen(contents[0]);
+				</script>
+			</td>
+		</tr>
+	</table>
+</body>
 </html>

@@ -135,7 +135,6 @@ public class PageBean
 		String pre = action + "?page=" + (page - 1);
 		String next = action + "?page=" + (page + 1);
 		this.setCtrlInfo("<a>显示第"+this.getCurrentPage()+"页</a>&nbsp;<a href="+first+">第一页</a>"+"&nbsp;<a href="+pre+">上一页</a>"+"&nbsp;<a href="+next+">下一页</a>&nbsp;<a href="+last+">最后一页</a>"+"&nbsp;&nbsp;<a>一共"+this.getTotalPage()+"页</a>");
-		//this.setCtrlInfo("显示第" + this.getCurrentPage() + "页&nbsp;<a href=" + first + ">第一页</a>" + "&nbsp;<a href=" + pre + ">上一页</a>" + "&nbsp;<a href=" + next + ">下一页</a>&nbsp;<a href=" + last + ">最后一页</a>");
 	}
 
 }
